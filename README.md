@@ -368,7 +368,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👨‍💻 Author
 
 **Android Tech Challenge**
-- Built with ❤️ using modern Android development practices
 - Clean Architecture implementation with SOLID principles
 - Material 3 design system with accessibility focus
 - Comprehensive testing strategy
