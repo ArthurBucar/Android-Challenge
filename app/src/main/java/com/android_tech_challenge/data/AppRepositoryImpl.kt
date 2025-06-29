@@ -43,8 +43,16 @@ class AppRepositoryImpl(
         dao.getAll().map { it.toDomain() }
     }
 
+    override suspend fun getFavorites(): List<AppEntity> = withContext(Dispatchers.IO) {
+        dao.getFavorites().map { it.toDomain() }
+    }
+
     override suspend fun cacheApps(apps: List<AppEntity>) = withContext(Dispatchers.IO) {
         dao.clearAll()
         dao.insertAll(apps.map { it.toCache() })
+    }
+
+    override suspend fun toggleFavorite(appId: Long, isFavorite: Boolean) = withContext(Dispatchers.IO) {
+        dao.updateFavorite(appId, isFavorite)
     }
 } 

@@ -15,5 +15,6 @@ fun App.toEntity(): AppEntity = AppEntity(
     rating = this.stats?.rating?.average,
     ratingCount = this.stats?.rating?.total,
     versionName = this.file?.versionName,
-    size = this.file?.size
+    size = this.file?.size,
+    isFavorite = false
 ) 

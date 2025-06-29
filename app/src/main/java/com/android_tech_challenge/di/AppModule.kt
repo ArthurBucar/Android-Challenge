@@ -7,6 +7,8 @@ import com.android_tech_challenge.data.AptoideApi
 import com.android_tech_challenge.data.AppRepositoryImpl
 import com.android_tech_challenge.domain.AppRepository
 import com.android_tech_challenge.domain.GetAppsUseCase
+import com.android_tech_challenge.domain.GetFavoritesUseCase
+import com.android_tech_challenge.domain.ToggleFavoriteUseCase
 import com.android_tech_challenge.data.cache.AppDatabase
 import com.android_tech_challenge.data.cache.AppDao
 import dagger.Module
@@ -38,6 +40,14 @@ object AppModule {
     @Provides
     @Singleton
     fun provideGetAppsUseCase(repository: AppRepository): GetAppsUseCase = GetAppsUseCase(repository)
+
+    @Provides
+    @Singleton
+    fun provideGetFavoritesUseCase(repository: AppRepository): GetFavoritesUseCase = GetFavoritesUseCase(repository)
+
+    @Provides
+    @Singleton
+    fun provideToggleFavoriteUseCase(repository: AppRepository): ToggleFavoriteUseCase = ToggleFavoriteUseCase(repository)
 
     @Provides
     @Singleton

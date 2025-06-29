@@ -17,5 +17,6 @@ data class AppCacheEntity(
     val rating: Double?,
     val ratingCount: Int?,
     val versionName: String?,
-    val size: Long?
+    val size: Long?,
+    val isFavorite: Boolean = false
 ) 

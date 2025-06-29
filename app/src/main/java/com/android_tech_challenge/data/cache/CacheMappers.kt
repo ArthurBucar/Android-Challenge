@@ -15,7 +15,8 @@ fun AppCacheEntity.toDomain(): AppEntity = AppEntity(
     rating = rating,
     ratingCount = ratingCount,
     versionName = versionName,
-    size = size
+    size = size,
+    isFavorite = isFavorite
 )
 
 fun AppEntity.toCache(): AppCacheEntity = AppCacheEntity(
@@ -31,5 +32,6 @@ fun AppEntity.toCache(): AppCacheEntity = AppCacheEntity(
     rating = rating,
     ratingCount = ratingCount,
     versionName = versionName,
-    size = size
+    size = size,
+    isFavorite = isFavorite
 ) 
