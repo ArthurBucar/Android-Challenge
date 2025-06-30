@@ -2,6 +2,8 @@
 
 A modern Android application that fetches and displays applications from the Aptoide public API, built with Jetpack Compose and following Clean Architecture principles. This project demonstrates advanced Android development practices with a focus on user experience, performance, and maintainability.
 
+![android-challenge](https://github.com/user-attachments/assets/48e114c2-c03f-4983-94ec-4e606d15095d)
+
 ## 🚀 Features
 
 ### Core Functionality
